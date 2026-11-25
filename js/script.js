@@ -2,9 +2,9 @@
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
-menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
 
 // Typing Effect
 const roles = ["Web Developer", "UI/UX Designer", "Software Engineer", "Tech Enthusiast"];
@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactform').addEventListener('submit', function (e) {
     e.preventDefault();
     alert('Thank you! Your message has been sent.');
     this.reset();
