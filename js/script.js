@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
 
-// Scroll Reveal Animation
+// Scroll Reveal Animation and Contact Form Alert
 window.addEventListener('scroll', () => {
     const reveals = document.querySelectorAll('.reveal');
     reveals.forEach(element => {
