@@ -384,3 +384,15 @@ footer {
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
