@@ -37,3 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     typingElement.textContent = "";
     typeEffect();
 });
+
+// Scroll Reveal Animation
+window.addEventListener('scroll', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+            element.classList.add('active');
+        }
+    });
+});
