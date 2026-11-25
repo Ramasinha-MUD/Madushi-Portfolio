@@ -396,3 +396,38 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-buttons, .social-icons {
+        justify-content: center;
+    }
+    .hero-image .img-box {
+        width: 280px;
+        height: 280px;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 8%;
+        background: #131a2a;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
