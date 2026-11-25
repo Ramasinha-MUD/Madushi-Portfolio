@@ -250,3 +250,32 @@ section {
     font-size: 0.9rem;
     margin: 0;
 }
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: block;
+}
